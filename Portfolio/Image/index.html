@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shraddha Portfolio</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Hero Section */
+.hero{
+    background:linear-gradient(135deg,#4f46e5,#7c3aed);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:1.2rem;
+}
+
+/* About Section */
+.about{
+    max-width:1000px;
+    margin:auto;
+    padding:60px 20px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:30px;
+}
+
+.about img{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #4f46e5;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.about-text{
+    text-align:center;
+}
+
+.about-text h2{
+    margin-bottom:15px;
+}
+
+/* Projects Section */
+.projects{
+    background:white;
+    padding:60px 20px;
+}
+
+.projects h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.project-grid{
+    max-width:1100px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1fr;
+    gap:20px;
+}
+
+.card{
+    background:#f8f8f8;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+/* Contact Section */
+.contact{
+    padding:60px 20px;
+}
+
+.contact h2{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+form{
+    max-width:600px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input,
+textarea{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    background:#4f46e5;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#4338ca;
+}
+
+/* Footer */
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:20px;
+}
+
+/* Responsive Design */
+@media(min-width:768px){
+
+    .about{
+        flex-direction:row;
+        justify-content:center;
+    }
+
+    .about-text{
+        text-align:left;
+        max-width:600px;
+    }
+
+    .project-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+}
+
+</style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="hero">
+    <h1>Shraddha Pisal</h1>
+    <p>Frontend Developer| Learner</p>
+</section>
+
+<!-- About Section -->
+<section class="about">
+<img src="shradha.jpg.jpeg" alt="shradha Pisal">
+
+    <div class="about-text">
+        <h2>About Me</h2>
+
+        <p>
+            Hello! I am Shraddha Pisal.
+            I am passionate about Web Development,
+            I enjoy learning & new technologies and creating practical
+            projects that solve real-world problems.
+            
+        </p>
+
+    </div>
+
+</section>
+
+<!-- Projects Section -->
+<section class="projects">
+
+    <h2>My Projects</h2>
+
+    <div class="project-grid">
+
+        <div class="card">
+            <h3>E-Commerce Website</h3>
+            <p>
+                A responsive online shopping website
+                created using HTML, CSS and JavaScript.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>GIS Mapping Project</h3>
+            <p>
+                Interactive GIS mapping application
+                for spatial data visualization.
+            </p>
+        </div>
+
+
+    </div>
+
+</section>
+
+<!-- Contact Section -->
+<section class="contact">
+
+    <h2>Contact Me</h2>
+
+    <form>
+
+        <input
+            type="text"
+            placeholder="Enter Your Name"
+            required>
+
+        <input
+            type="email"
+            placeholder="Enter Your Email"
+            required>
+
+        <textarea
+            rows="5"
+            placeholder="Enter Your Message"
+            required></textarea>
+
+        <button type="submit">
+            Send Message
+        </button>
+
+    </form>
+
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 Shraddha Pisal | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
